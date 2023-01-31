@@ -1,0 +1,78 @@
+// Variables
+$color-primario: #e495ff;
+$color-primario-hover: #b879ce;
+$color-primario-active: #8e5d9e;
+
+$color-secundario:#6d6d6d;
+$color-secundario-hover:#505050;
+$color-secundario-active:#4d4d4d;
+
+$color-respaldo:rgb(0, 170, 37);
+$color-respaldo-hover:rgb(0, 131, 28);
+$color-respaldo-active:rgb(1, 126, 28);
+
+$color-claro:#ffff;
+$color-claro-50:rgb(235, 235, 235);
+$color-oscuro:#1f1f1f;
+$color-oscuro-50:#1f1f1ff6;
+
+// Modificando clase .nav de boostrap y llamandola ahora .naav
+.naav {
+    color: $color-secundario;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+
+    li {
+        padding: 0.5rem 1rem;
+
+        &:hover {
+            color: $color-primario-hover;
+            border-bottom: 1px solid $color-primario-hover;
+        }
+
+        :active {
+            color: $color-primario-active;
+        }
+    }
+}
+
+// le estoy agregando mas height a la clase .container-fluid para que no me mueva al hacer hover en el nav
+.navbar .container-fluid {
+    height: 4rem;
+}
+
+// Modificando el color del navbar buenoe el texto de la izquierda
+body .navbar-brand {
+    color: #6d6d6d;
+}
+
+// Modificando el off canvas
+.naav-canvas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: $color-secundario;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    li {
+        padding: 21px;
+
+        &:hover {
+            color: $color-primario;
+            border-bottom: 1px solid $color-primario;
+        }
+    }
+}
+
+// Row
+
+.row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+}

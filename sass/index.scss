@@ -1,0 +1,74 @@
+// Componentes
+@use 'componentes';
+
+// Estilos
+@use 'estilos';
+
+// Modificar componentes y variables de boostrap
+@use 'boostrap';
+
+// Variables
+$color-primario: #e495ff;
+$color-primario-hover: #b879ce;
+$color-primario-active: #8e5d9e;
+
+$color-secundario:#6d6d6d;
+$color-secundario-hover:#b1b1b1;
+$color-secundario-active:#a5a5a5;
+
+$color-respaldo:rgb(0, 170, 37);
+$color-respaldo-hover:rgb(0, 131, 28);
+$color-respaldo-active:rgb(1, 126, 28);
+
+$color-claro:#ffff;
+$color-claro-50:rgb(235, 235, 235);
+$color-oscuro:#1f1f1f;
+$color-oscuro-50:#1f1f1ff6;
+
+// Estilo globar, transision
+// /////////////////////////////////
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s;
+}
+
+// Estilos en el body
+// /////////////////////////////////
+
+// Estilos en el nav
+// /////////////////////////////////
+
+body nav {
+    background-color: $color-claro;
+    position: absolute;
+    top: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 7px;
+    width: 90%;
+
+    #logo {
+        width: 50px;
+    }
+}
+
+
+// Estilos en el header
+// /////////////////////////////////
+
+body header {
+    margin-top: -80px;
+    width: 100%;
+    height: max-content;
+    background-color: #f1d6fa;
+
+    span.text-hola {
+        color: #379994;
+    }
+}
