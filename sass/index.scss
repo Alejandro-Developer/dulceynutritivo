@@ -21,7 +21,7 @@ $color-respaldo-hover:rgb(0, 131, 28);
 $color-respaldo-active:rgb(1, 126, 28);
 
 $color-claro:#ffff;
-$color-claro-50:rgb(235, 235, 235);
+$color-claro-50:#fce9ff;
 $color-oscuro:#1f1f1f;
 $color-oscuro-50:#1f1f1ff6;
 
@@ -62,13 +62,68 @@ body nav {
 // Estilos en el header
 // /////////////////////////////////
 
-body header {
+html body header {
     margin-top: -80px;
     width: 100%;
     height: max-content;
-    background-color: #f1d6fa;
+    background-image: url(../public/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
 
     span.text-hola {
         color: #379994;
     }
+}
+
+
+// Estilos en el main
+html body main {
+    p {
+        color: $color-oscuro;
+    }
+
+    // Seccion Kills
+    #kills {
+        color: $color-oscuro;
+        width: 100%;
+        height: auto;
+
+        ul {
+            list-style: none;
+
+            li {
+                text-decoration: none;
+
+                // i{
+                //     color: #379994;
+                // }
+            }
+        }
+    }
+
+}
+
+
+// Estilos al scroll
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $color-claro;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color-secundario;
+    border-radius: 14px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color-secundario;
 }
