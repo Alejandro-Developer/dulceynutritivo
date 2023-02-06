@@ -76,3 +76,19 @@ body .navbar-brand {
     --bs-gutter-x: 0rem;
     --bs-gutter-y: 0;
 }
+
+// CArd
+
+html body {
+    .card {
+        border: none;
+    }
+
+    .btn-outline-light {
+        color: #6c757d;
+
+        &:hover {
+            color: #6c757d;
+        }
+    }
+}

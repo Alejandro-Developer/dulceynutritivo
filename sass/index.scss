@@ -25,6 +25,8 @@ $color-claro-50:#fce9ff;
 $color-oscuro:#1f1f1f;
 $color-oscuro-50:#1f1f1ff6;
 
+$color-fondo:#fff9ff;
+
 // Estilo globar, transision
 // /////////////////////////////////
 
@@ -36,6 +38,10 @@ $color-oscuro-50:#1f1f1ff6;
     -ms-user-select: none;
     user-select: none;
     transition: all 0.2s;
+}
+
+html body {
+    background-color: $color-fondo;
 }
 
 // Estilos en el body
@@ -50,7 +56,7 @@ body nav {
     top: 1.25rem;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 7px;
+    border-radius: 0.375rem;
     width: 90%;
 
     #logo {
@@ -72,7 +78,7 @@ html body header {
     background-position: 100%;
 
     span.text-hola {
-        color: #379994;
+        color: #36bc9b;
     }
 }
 
@@ -95,15 +101,38 @@ html body main {
             li {
                 text-decoration: none;
 
-                // i{
-                //     color: #379994;
-                // }
+                i {
+                    color: #379994;
+                }
+            }
+
+            li:nth-child(2) {
+                i {
+                    color: #40b1ab;
+                }
+            }
+
+            li:nth-child(3) {
+                i {
+                    color: #49c7c1;
+                }
+            }
+
+
+            li:nth-child(4) {
+                i {
+                    color: #54e0d9;
+                }
+            }
+
+            li:nth-child(5) {
+                i {
+                    color: #5beee7;
+                }
             }
         }
     }
-
 }
-
 
 // Estilos al scroll
 /* width */
