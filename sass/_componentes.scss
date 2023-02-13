@@ -18,6 +18,15 @@ $color-oscuro-50:#1f1f1ff6;
 
 $color-fondo:#fff9ff;
 
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s;
+}
 
 // Boton primario
 // //////////////////////////////
@@ -80,7 +89,7 @@ html body .btn-primario {
 
 // Paste que tendra una transision
 // ////////////////////////////////////
-body header #pastel {
+body #pastel {
     width: 500px;
     position: relative;
     top: 10rem;
@@ -174,7 +183,6 @@ html body .container-swiper {
 
         .swiper-slide {
             background-color: $color-claro;
-            color: $color-claro;
             border-radius: 0.375rem;
             height: 100%;
 
@@ -271,14 +279,14 @@ html body .container-swiper {
     }
 }
 
-
+// boton scrol top
 html body .scrollBoton {
     color: $color-primario;
     display: none;
     width: 2.75rem;
     height: 2.75rem;
     position: fixed;
-    z-index: 1000;
+    z-index: 10;
     bottom: 50px;
     right: 30px;
     background: $color-claro-50;
@@ -310,6 +318,8 @@ html body .scrollBoton {
     }
 }
 
+// Tarjetas ecomerce
+// ////////////////////////////////////////
 html body #productos {
 
     .band {
@@ -332,10 +342,6 @@ html body #productos {
 
         .item-1 {
             grid-column: 1/ span 2;
-        }
-
-        .item-1 h1 {
-            font-size: 30px;
         }
     }
 
@@ -402,6 +408,10 @@ html body #productos {
             letter-spacing: .05em;
             margin: 2em 0 0 0;
         }
+
+        img {
+            height: 250px;
+        }
     }
 
     /* typography */
@@ -410,4 +420,127 @@ html body #productos {
         margin: 0;
         color: #333;
     }
+}
+
+
+html body {
+    .bi-heart-fill {
+        color: $color-primario;
+    }
+}
+
+
+html body #testimonios {
+
+    .container-swiper {
+        background-color: #f6d4fc;
+
+        .swiper-slide {
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            h6 {
+                color: #36bc9b;
+            }
+
+            h4,
+            h6,
+            p {
+                position: relative;
+                top: -30px;
+            }
+
+            img {
+                margin: auto;
+                width: 120px;
+                height: 120px;
+                background-size: cover;
+                border-radius: 50%;
+                position: relative;
+                top: -60px;
+            }
+        }
+    }
+}
+
+
+
+// Modal
+
+.modall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: none;
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .3s .4s;
+    --transform: translateY(-10vh);
+    --transition: transform .6s;
+
+    z-index: 15;
+}
+
+
+
+.modal__container {
+    margin: auto;
+    width: 95%;
+    max-width: 600px;
+    max-height: 95%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+
+@media (max-width:800px) {
+
+    .modal__container {
+        padding: 2em 1.5em;
+    }
+
+    .modal__title {
+        font-size: 2rem;
+    }
+}
+
+
+
+// Estilos al scroll
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $color-claro;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color-secundario;
+    border-radius: 14px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color-secundario;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }

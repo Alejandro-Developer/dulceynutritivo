@@ -19,7 +19,7 @@
     <!-- ///////////////////////////////////////// -->
     <nav class="navbar navbar-fondo">
         <div class="container-fluid px-1 px-md-5">
-            <a class="navbar-brand" href="./Index.html" style="margin-left: 0.5rem;">
+            <a class="navbar-brand" href="./index.html" style="margin-left: 0.5rem;">
                 <img src="./public/img/Logo.png" id="logo" alt="">
             </a>
             <div class="d-none d-lg-block">
@@ -45,7 +45,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="#contacto">
+                        <a class="nav-link d-flex align-items-center" href="#footer">
                             <span>Contactanos</span>
                         </a>
                     </li>
@@ -53,9 +53,9 @@
             </div>
 
             <div class="d-flex justify-content-center gap-2 align-content-center">
-                <input name="btnIniciar" type="button" class="btn btn-primario d-none d-lg-block" value="Login">
-                <input name="btnRegistrar" type="button" class="btn btn-outline-light d-none d-lg-block" d-none
-                    d-lg-block mx-md-2" value="Registrate">
+                <a href="./login.html" class="btn btn-primario d-none d-lg-block" target="_blank">Login</a>
+                <a href="./registro.html" class="btn btn-outline-light d-none d-lg-block" d-none d-lg-block mx-md-2"
+                    target="_blank">Registrate</a>
             </div>
 
             <!-- inicio de Off canvas derecho -->
@@ -108,15 +108,15 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center" href="#contacto">
+                            <a class="nav-link d-flex align-items-center" href="#footer">
                                 <span>Contactanos</span>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="d-grid gap-2  col-12 mx-auto">
-                    <input name="btnIniciar" type="button" class="btn btn-primario" value="Login">
-                    <input name="btnRegistrar" type="button" class="btn btn-outline-light" value="Registrate">
+                    <a href="./login.html" class="btn btn-primario" target="_blank">Login</a>
+                    <a href="./registro.html" class="btn btn-outline-light" target="_blank">Registrate</a>
                 </div>
             </div>
         </div>
@@ -181,6 +181,8 @@
 
     <main>
         <div class="p-2 p-md-5 m-2">
+
+            <!-- Sobre mi -->
             <div id="sobre-mi" class="mb-5 my-5 py-5">
                 <h3 class="fw-bold text-dark mb-4 text-muted">Sobre Nosotros</h3>
 
@@ -293,8 +295,9 @@
                 </div>
             </div>
 
-            <div id="productos">
-                <div>
+            <!-- tarjetas de productos -->
+            <div class="mb-5">
+                <div id="productos" class="my-5">
                     <h3 class="fw-bolder text-dark text-muted mb-4 my-md-5">Productos</h3>
 
                     <div class="support-grid"></div>
@@ -302,144 +305,306 @@
                     <div class="band">
                         <div class="card cardd item-1">
                             <div class="thumb card-img-top"
-                                style="background-image: url(./public/img/productos/trufas.jpg);">
+                                style="background-image: url(./public/img/productos/torta\ de\ fresa.jpg);">
                             </div>
                             <article>
-                                <h5 class="card-title fw-bolder text-dark">International Artist Feature:
-                                    Malaysia</h5>
-
+                                <h5 class="card-title fw-bolder text-dark">Torta de fresa con crema chantilly</h5>
+                                <div class="d-flex justify-content-between align-items-baseline mb-3">
+                                    <h6 class="fw-bolder disponible">Disponible</h6>
+                                    <h6 class="fw-bolder text-precio">$35</h6>
+                                </div>
                                 <div class="row justify-content-between align-items-baseline">
-                                    <a href="#" class="col-9 btn btn-primario">Comprar ahora</a>
-                                    <button class="col-2 btn btn-outline-light"><i class="bi bi-heart"></i></button>
+                                    <a href="https://api.whatsapp.com/send?phone=+584145142688&text=Hola, Nececito mas informacion!"
+                                        target="_blank" class="col-9 btn btn-primario">Comprar ahora</a>
+                                    <button class="like col-2 btn btn-outline-light"><i
+                                            class="cambiarColor bi bi-heart"></i></button>
                                 </div>
                             </article>
                         </div>
 
                         <div class="card cardd item-2">
-                            <img src="./public/img/productos/yogurt.jpg" class="card-img-top mb-2" alt="...">
+                            <img src="./public/img/productos/ponque de vainilla.jpg" class="card-img-top mb-2"
+                                alt="...">
                             <div class="card-body mb-4">
-                                <h5 class="card-title fw-bolder text-dark mb-3">Card title</h5>
-                                <p class="card-text fs-6 fw-normal text-muted">Some quick example text to build on
-                                    the
-                                    card title and make up the
-                                    bulk of the card's
-                                    content.</p>
+                                <h5 class="card-title fw-bolder text-dark mb-3">Ponque de vainilla</h5>
+                                <p class="card-text fs-6 fw-normal text-muted">
+                                    Bouquet de ponque para toda ocasión adornados con merengue suizo en forma de ramo.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-baseline mb-3">
                                     <h6 class="fw-bolder disponible">Disponible</h6>
-                                    <h6 class="fw-bolder text-precio">$25</h6>
+                                    <h6 class="fw-bolder text-precio">$9</h6>
                                 </div>
                                 <div class="row justify-content-between align-items-baseline">
-                                    <a href="#" class="col-9 btn btn-primario">Comprar ahora</a>
-                                    <button class="col-2 btn btn-outline-light"><i class="bi bi-heart"></i></button>
+                                    <a href="https://api.whatsapp.com/send?phone=+584145142688&text=Hola, Nececito mas informacion!"
+                                        target="_blank" class="col-9 btn btn-primario">Comprar ahora</a>
+                                    <button class="like col-2 btn btn-outline-light"><i
+                                            class="cambiarColor bi bi-heart"></i></button>
                                 </div>
                             </div>
                         </div>
                         <div class="card cardd item-3">
                             <img src="./public/img/productos/yogurt.jpg" class="card-img-top mb-2" alt="...">
                             <div class="card-body mb-4">
-                                <h5 class="card-title fw-bolder text-dark mb-3">Card title</h5>
-                                <p class="card-text fs-6 fw-normal text-muted">Some quick example text to build on
-                                    the
-                                    card title and make up the
-                                    bulk of the card's
-                                    content.</p>
+                                <h5 class="card-title fw-bolder text-dark mb-3">Yogurt con fresa</h5>
+                                <p class="card-text fs-6 fw-normal text-muted">Yogurt firme con fresa tipo griego firme
+                                    súper
+                                    consistente y
+                                    cremoso.</p>
                                 <div class="d-flex justify-content-between align-items-baseline mb-3">
                                     <h6 class="fw-bolder disponible">Disponible</h6>
-                                    <h6 class="fw-bolder text-precio">$25</h6>
+                                    <h6 class="fw-bolder text-precio">$4</h6>
                                 </div>
                                 <div class="row justify-content-between align-items-baseline">
-                                    <a href="#" class="col-9 btn btn-primario">Comprar ahora</a>
-                                    <button class="col-2 btn btn-outline-light"><i class="bi bi-heart"></i></button>
+                                    <a href="https://api.whatsapp.com/send?phone=+584145142688&text=Hola, Nececito mas informacion!"
+                                        target="_blank" class="col-9 btn btn-primario">Comprar ahora</a>
+                                    <button class="like col-2 btn btn-outline-light"><i
+                                            class="cambiarColor bi bi-heart"></i></button>
                                 </div>
                             </div>
                         </div>
                         <div class="card cardd item-4">
-                            <img src="./public/img/productos/yogurt.jpg" class="card-img-top mb-2" alt="...">
+                            <img src="./public/img/productos/minicake.jpg" class="card-img-top mb-2" alt="...">
                             <div class="card-body mb-4">
-                                <h5 class="card-title fw-bolder text-dark mb-3">Card title</h5>
-                                <p class="card-text fs-6 fw-normal text-muted">Some quick example text to build on
-                                    the
-                                    card title and make up the
-                                    bulk of the card's
-                                    content.</p>
+                                <h5 class="card-title fw-bolder text-dark mb-3">Minicake con chantilly</h5>
+                                <p class="card-text fs-6 fw-normal text-muted">Delisioso ponque de vainilla
+                                    cubierto con crema de moka, especial para ti.</p>
                                 <div class="d-flex justify-content-between align-items-baseline mb-3">
                                     <h6 class="fw-bolder disponible">Disponible</h6>
-                                    <h6 class="fw-bolder text-precio">$25</h6>
+                                    <h6 class="fw-bolder text-precio">$3</h6>
                                 </div>
                                 <div class="row justify-content-between align-items-baseline">
-                                    <a href="#" class="col-9 btn btn-primario">Comprar ahora</a>
-                                    <button class="col-2 btn btn-outline-light"><i class="bi bi-heart"></i></button>
+                                    <a href="https://api.whatsapp.com/send?phone=+584145142688&text=Hola, Nececito mas informacion!"
+                                        target="_blank" class="col-9 btn btn-primario">Comprar ahora</a>
+                                    <button class="like col-2 btn btn-outline-light"><i
+                                            class="cambiarColor bi bi-heart"></i></button>
                                 </div>
                             </div>
                         </div>
                         <div class="card cardd item-5">
-                            <img src="./public/img/productos/yogurt.jpg" class="card-img-top mb-2" alt="...">
+                            <img src="./public/img/productos/Pan de hamburguesa.jpg" class="card-img-top mb-2"
+                                alt="...">
                             <div class="card-body mb-4">
-                                <h5 class="card-title fw-bolder text-dark mb-3">Card title</h5>
-                                <p class="card-text fs-6 fw-normal text-muted">Some quick example text to build on
-                                    the
-                                    card title and make up the
-                                    bulk of the card's
-                                    content.</p>
+                                <h5 class="card-title fw-bolder text-dark mb-3">Pan de hamburguesa</h5>
+                                <p class="card-text fs-6 fw-normal text-muted">Delicioso
+                                    pan de hamburguesa con harina de arroz y papá libre de gluten 3 unidades.</p>
                                 <div class="d-flex justify-content-between align-items-baseline mb-3">
                                     <h6 class="fw-bolder disponible">Disponible</h6>
-                                    <h6 class="fw-bolder text-precio">$25</h6>
+                                    <h6 class="fw-bolder text-precio">$10</h6>
                                 </div>
                                 <div class="row justify-content-between align-items-baseline">
-                                    <a href="#" class="col-9 btn btn-primario">Comprar ahora</a>
-                                    <button class="col-2 btn btn-outline-light"><i class="bi bi-heart"></i></button>
+                                    <a href="https://api.whatsapp.com/send?phone=+584145142688&text=Hola, Nececito mas informacion!"
+                                        target="_blank" class="col-9 btn btn-primario">Comprar ahora</a>
+                                    <button class="like col-2 btn btn-outline-light"><i
+                                            class="cambiarColor bi bi-heart"></i></button>
                                 </div>
                             </div>
                         </div>
                         <div class="card cardd item-6">
-                            <img src="./public/img/productos/yogurt.jpg" class="card-img-top mb-2" alt="...">
+                            <img src="./public/img/productos/galletas.jpg" class="card-img-top mb-2" alt="...">
                             <div class="card-body mb-4">
-                                <h5 class="card-title fw-bolder text-dark mb-3">Card title</h5>
-                                <p class="card-text fs-6 fw-normal text-muted">Some quick example text to build on
-                                    the
-                                    card title and make up the
-                                    bulk of the card's
-                                    content.</p>
+                                <h5 class="card-title fw-bolder text-dark mb-3">Galletas</h5>
+                                <p class="card-text fs-6 fw-normal text-muted">Galletas elaboradas con avena y cambur
+                                    con chispas de chocolate. 3 unidades.</p>
                                 <div class="d-flex justify-content-between align-items-baseline mb-3">
                                     <h6 class="fw-bolder disponible">Disponible</h6>
-                                    <h6 class="fw-bolder text-precio">$25</h6>
+                                    <h6 class="fw-bolder text-precio">$2.50</h6>
                                 </div>
                                 <div class="row justify-content-between align-items-baseline">
-                                    <a href="#" class="col-9 btn btn-primario">Comprar ahora</a>
-                                    <button class="col-2 btn btn-outline-light"><i class="bi bi-heart"></i></button>
+                                    <a href="https://api.whatsapp.com/send?phone=+584145142688&text=Hola, Nececito mas informacion!"
+                                        target="_blank" class="col-9 btn btn-primario">Comprar ahora</a>
+                                    <button class="like col-2 btn btn-outline-light"><i
+                                            class="cambiarColor bi bi-heart"></i></button>
                                 </div>
                             </div>
                         </div>
                         <div class="card cardd item-7">
-                            <img src="./public/img/productos/yogurt.jpg" class="card-img-top mb-2" alt="...">
+                            <img src="./public/img/productos/mini torta de zanahoria.jpg" class="card-img-top mb-2"
+                                alt="...">
                             <div class="card-body mb-4">
-                                <h5 class="card-title fw-bolder text-dark mb-3">Card title</h5>
-                                <p class="card-text fs-6 fw-normal text-muted">Some quick example text to build on
-                                    the
-                                    card title and make up the
-                                    bulk of the card's
-                                    content.</p>
+                                <h5 class="card-title fw-bolder text-dark mb-3">Mini torta de Zanahoria</h5>
+                                <p class="card-text fs-6 fw-normal text-muted">Libre se gluten elaborada con harina de
+                                    almendra para paladares exigentes.</p>
                                 <div class="d-flex justify-content-between align-items-baseline mb-3">
                                     <h6 class="fw-bolder disponible">Disponible</h6>
-                                    <h6 class="fw-bolder text-precio">$25</h6>
+                                    <h6 class="fw-bolder text-precio">$6</h6>
                                 </div>
                                 <div class="row justify-content-between align-items-baseline">
-                                    <a href="#" class="col-9 btn btn-primario">Comprar ahora</a>
-                                    <button class="col-2 btn btn-outline-light"><i class="bi bi-heart"></i></button>
+                                    <a href="https://api.whatsapp.com/send?phone=+584145142688&text=Hola, Nececito mas informacion!"
+                                        target="_blank" class="col-9 btn btn-primario">Comprar ahora</a>
+                                    <button class="like col-2 btn btn-outline-light"><i
+                                            class="cambiarColor bi bi-heart"></i></button>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
                 </div>
-
             </div>
 
-        </div>
-        </div>
+            <div class="d-flex justify-content-center w-100 mb-5">
+                <a href="#" class="btn btn-lg btn-outline-light">Ver Mas</a>
+            </div>
+
+            <!-- Testimonios -->
+            <div class="w-100">
+                <div id="testimonios">
+                    <h3 class="fw-bolder text-dark text-muted mb-4 my-md-5">Testimonios</h3>
+
+                    <div class="container-swiper d-flex justify-content-center mb-5">
+                        <div class="swiper-container mySwiper overflow-hidden">
+
+                            <div class="swiper-wrapper">
+                                <div
+                                    class="swiper-slide d-flex flex-column align-items-center justify-content-center p-4">
+                                    <img src="./public/img/Yo.png" alt="">
+                                    <div class="card-description text-center">
+                                        <div class="card-title">
+                                            <h4 class="fw-bolder text-dark text-muted">Jesus Ventura</h4>
+                                            <h6>Developer Web</h6>
+                                        </div>
+                                        <div class="card-text">
+                                            <p class="fw-normal text-muted">Mi experiensia con dulce y nutritivo 652 fue
+                                                unica
+                                                tienen la mejor atencian al cliente
+                                                y sus productos son muy ricos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-slide d-flex flex-column align-items-center justify-content-center p-4">
+                                    <img src="./public/img/principal.jpg" alt="">
+                                    <div class="card-description text-center">
+                                        <div class="card-title">
+                                            <h4 class="fw-bolder text-dark text-muted">Jose Principal</h4>
+                                            <h6>Analista de Sistemas</h6>
+                                        </div>
+                                        <div class="card-text">
+                                            <p class="fw-normal text-muted">Le doy 5 estrellas a dulce y nutritivo por
+                                                la calidad
+                                                de sus productos y eso sin hablar de su exelente atencion al cliente.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-slide d-flex flex-column align-items-center justify-content-center p-4">
+                                    <img src="./public/img/meyin.jpg" alt="">
+                                    <div class="card-description text-center">
+                                        <div class="card-title">
+                                            <h4 class="fw-bolder text-dark text-muted">Meyinson Castillo</h4>
+                                            <h6>BackEnd Developer</h6>
+                                        </div>
+                                        <div class="card-text">
+                                            <p class="fw-normal text-muted">Recomiendo al 100% a dulce y nutritivo
+                                                muy ricos sus creaciones, con lo mejor en calidad precio.
+                                                Sobre todo recomiendo su torta de Zanahorias.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
+
+    <!-- Foter o contactos -->
+
+    <footer id="footer">
+        <div>
+            <div class="p-2 p-md-5 m-2 row justify-content-center lign-items-center">
+
+                <div class="col-md-4 my-5 col-12">
+                    <div class="d-flex align-items-center gap-2 mb-5">
+                        <i class="bi bi-send-fill iPrincipal"></i>
+                        <h4>Contactos</h4>
+                    </div>
+                    <div class="mx-2">
+                        <a href="tel:+584145142688" class="d-flex align-items-baseline gap-2" target="_blank">
+                            <i class="bi bi-telephone-fill"></i>
+                            <h6>+584145142688</h6>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=+584145142688&text=Hola, Nececito mas informacion!"
+                            class="my-3 d-flex align-items-baseline gap-2" target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                            <h6>Whatsapp</h6>
+                        </a>
+                        <a href="https://www.facebook.com/sandra.nurse.5" class="d-flex align-items-baseline gap-2"
+                            target="_blank">
+                            <i class="bi bi-facebook"></i>
+                            <h6>Facebook</h6>
+                        </a>
+                        <a href="#footer" class="d-flex align-items-baseline gap-2 my-3 mb-5" target="_blank">
+                            <i class="bi bi-google"></i>
+                            <h6>Gmail</h6>
+                        </a>
+
+                        <form class="row row-cols-lg-auto align-items-center">
+                            <div class="col-9">
+                                <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"><i class="bi bi-chat-right-fill"></i></div>
+                                    <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                        placeholder="Escribe tu pedido aqui">
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-primario">
+                                    <i class="bi bi-send-fill"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 my-5">
+                    <div class="d-flex align-items-center gap-2 mb-5">
+                        <i class="bi bi-instagram iPrincipal"></i>
+                        <h4>Instagram</h4>
+                    </div>
+
+                    <a href="https://www.instagram.com/dulceynutritivo652/" target="_blank">
+                        <div class="parent">
+                            <div class="div1"> <img src="./public/img/productos/torta.jpg" alt=""> </div>
+                            <div class="div2"> <img src="./public/img/productos/galletas.jpg" alt=""> </div>
+                            <div class="div3"> <img src="./public/img/productos/trufas.jpg" alt=""> </div>
+                            <div class="div4"> <img src="./public/img/productos/yogurt.jpg" alt=""> </div>
+                            <div class="div5"> <img src="./public/img/Sandraa.jpg" alt=""> </div>
+                            <div class="div6"> <img src="./public/img/productos/torta de fresa.jpg" alt=""> </div>
+                            <div class="div7"> <img src="./public/img/productos/ponque de vainilla.jpg" alt=""> </div>
+                            <div class="div8"> <img src="./public/img/fotoSandra.jpg" alt=""> </div>
+                            <div class="div9"> <img src="./public/img/productos/mini torta de zanahoria.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-12 my-5">
+                    <div class="d-flex align-items-center gap-2 mb-5">
+                        <i class="bi bi-geo-alt-fill iPrincipal"></i>
+                        <h4>Direccion</h4>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d491.06860026531785!2d-69.3424993!3d10.0540408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb441316555483f82!2zMTDCsDAzJzE0LjMiTiA2OcKwMjAnMzMuMiJX!5e0!3m2!1ses-419!2sde!4v1675982124542!5m2!1ses-419!2sde"
+                        width="300" height="375" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="p-2 p-md-5">
+                <hr>
+                <div class="row justify-content-center">
+                    <p class="text-muted col-md-6">Copyright &copy 2023 Todos los derechos reservados</p>
+                    <P class="text-muted col-md-6">Esta pagina web esta hecha por <a
+                            href="https://www.instagram.com/alejandro16_16/" target="_blank">Jesus Ventura</a>
+                </div>
+                </P>
+            </div>
+        </div>
+    </footer>
+
+    </div>
 
     <div class="scrollBoton">
         <a href="#inicio" class="scroll-top" title="Ir arriba">
@@ -458,6 +623,7 @@
     <script src="./js/swiper.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="./js/boton-arriba.js"></script>
+    <script src="./js/like.js"></script>
 
 </body>
 

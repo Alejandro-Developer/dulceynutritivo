@@ -1,0 +1,154 @@
+// Componentes
+@use 'componentes';
+
+// Estilos
+@use 'estilos';
+
+// Modificar componentes y variables de boostrap
+@use 'boostrap';
+
+// Variables
+$color-primario: #e495ff;
+$color-primario-hover: #b879ce;
+$color-primario-active: #8e5d9e;
+
+$color-secundario:#6d6d6d;
+$color-secundario-hover:#b1b1b1;
+$color-secundario-active:#a5a5a5;
+
+$color-respaldo:rgb(0, 170, 37);
+$color-respaldo-hover:rgb(0, 131, 28);
+$color-respaldo-active:rgb(1, 126, 28);
+
+$color-claro:#ffff;
+$color-claro-50:#fce9ff;
+$color-oscuro:#1f1f1f;
+$color-oscuro-50:#1f1f1ff6;
+
+$color-fondo:#fff9ff;
+
+html body {
+    width: 100%;
+    height: max-content;
+    background-image: url(../public/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+html body nav {
+    background-color: $color-claro;
+    position: relative;
+    top: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.375rem;
+    width: 90%;
+
+    #logo {
+        width: 50px;
+    }
+
+    button {
+        border: none;
+        background: none;
+        color: $color-primario;
+
+        &:hover {
+            color: $color-primario-hover;
+        }
+
+        i {
+            font-size: 32px;
+        }
+    }
+
+    item.active,
+    .dropdown-item:active {
+        color: $color-claro;
+        text-decoration: none;
+        background-color: #bb2d3b;
+    }
+}
+
+html body main {
+    margin-top: 0rem;
+
+    div {
+        div {
+            background-color: $color-claro;
+            border-radius: 0.35rem;
+        }
+    }
+
+
+    .buscar {
+        position: relative;
+        padding: 5px;
+    }
+
+    .buscar input {
+        width: 80vw;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 18px;
+        color: $color-oscuro;
+        outline: none;
+        border: 1px solid silver;
+        border-radius: 7px;
+    }
+
+    .btnn {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: $color-claro;
+        background-color: $color-secundario-active;
+    }
+}
+
+html body .scrollBoton {
+    color: $color-claro;
+    display: block !important;
+    width: 2.75rem;
+    height: 2.75rem;
+    position: fixed;
+    z-index: 10;
+    bottom: 50px;
+    right: 30px;
+    background: $color-primario;
+    border-radius: 50px !important;
+    text-align: center;
+
+    &:hover,
+    butoon.scroll-top:hover {
+        color: $color-claro;
+        background: $color-primario-hover;
+    }
+
+    button.scroll-top i {
+        color: $color-claro;
+        font-size: 1.75rem;
+        position: relative;
+        top: -7px;
+        left: -5px;
+    }
+}
+
+@media (max-width: 767px) {
+    html body .scrollBoton {
+        right: 15px;
+
+        a.scroll-top i {
+            color: $color-claro;
+            top: 0px;
+        }
+    }
+}
